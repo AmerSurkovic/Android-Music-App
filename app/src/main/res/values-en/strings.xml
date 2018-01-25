@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">rma15-16781</string>
+
+    <string name="labelaZanra">Genre: </string>
+    <string name="labelaWeb">Web page: </string>
+    <string name="labelaBiografija">Biography: </string>
+    <string name="labelaTOP5">Top 5 hits: </string>
+    <string name="shareButton">Share</string>
+    <string name="labelaPretraga">SEARCH</string>
+    <string name="buttonSlicniMuzicari">Similar genre</string>
+    <string name="buttonTOP5">Hits</string>
+
+</resources>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">rma15-16781</string>
+
+    <string name="labelaZanra">Žanr: </string>
+    <string name="labelaBiografija">Biografija: </string>
+    <string name="labelaTOP5">Top 5 najpoznatijih pjesama: </string>
+    <string name="shareButton">Podijeli</string>
+    <string name="labelaWeb">Web stranica:</string>
+    <string name="labelaPretraga">PRETRAGA</string>
+    <string name="buttonSlicniMuzicari">Sličan žanr</string>
+    <string name="buttonTOP5">Hitovi</string>
+</resources>

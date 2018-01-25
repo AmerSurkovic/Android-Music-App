@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ba.unsa.etf.rma.amer.rma15_16781.PrikazMuzicara">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Odaberite muzičara"
+            android:textStyle="bold"
+            android:id="@+id/detalji_nazivMuzicara"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/labelaZanra"
+            android:textStyle="bold"
+            android:id="@+id/detalji_labelaZanra"
+            android:layout_below="@+id/detalji_nazivMuzicara"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="N/A"
+            android:id="@+id/detalji_zanrMuzicara"
+            android:layout_below="@+id/detalji_nazivMuzicara"
+            android:layout_toRightOf="@+id/detalji_labelaZanra"
+            android:layout_toEndOf="@+id/detalji_labelaZanra" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/labelaWeb"
+            android:textStyle="bold"
+            android:id="@+id/detalji_labelaWeb"
+            android:layout_below="@+id/detalji_labelaZanra"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="19dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="N/A"
+            android:id="@+id/detalji_webMuzicara"
+            android:layout_alignTop="@+id/detalji_labelaWeb"
+            android:layout_toRightOf="@+id/detalji_labelaWeb"
+            android:layout_toEndOf="@+id/detalji_labelaWeb" />
+
+        TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/labelaBiografija"
+            android:textStyle="bold"
+            android:id="@+id/detalji_labelaBiografija"
+            android:layout_marginTop="19dp"
+            android:layout_below="@+id/detalji_labelaWeb"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+       <!-- <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detalji_imageView"
+            android:src="@drawable/p1"
+            android:layout_above="@+id/detalji_labelaWeb"
+            android:layout_toEndOf="@+id/detalji_zanrMuzicara"
+            android:layout_toRightOf="@+id/detalji_zanrMuzicara" /> -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=""
+            android:id="@+id/detalji_biografija"
+            android:layout_below="@+id/detalji_labelaBiografija"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:maxLines="@android:integer/config_longAnimTime"
+            android:scrollbars="vertical"
+            android:layout_above="@+id/detalji_shareButton" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/buttonTOP5"
+                android:textSize="5pt"
+                android:id="@+id/buttonTOP5" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/buttonSlicniMuzicari"
+                android:textSize="5pt"
+                android:id="@+id/buttonSlicniMuzicari" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Albumi"
+                android:textSize="5pt"
+                android:id="@+id/buttonAlbumi" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shareButton"
+                android:id="@+id/detalji_shareButton"
+                android:textSize="5pt"
+                android:layout_above="@+id/detalji_labelaTOP5"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+
+        TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/labelaTOP5"
+            android:textStyle="bold"
+            android:id="@+id/detalji_labelaTOP5"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="0dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/slicni_muzicari_fragment"></FrameLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
